@@ -53,7 +53,7 @@ def addSwiftPod():
 """
 keep_source_code_for_prebuilt_frameworks!
 
-pod "RxCocoa", :binary => true
+pod "RxCocoa", '~> 4.0', :binary => true
 pod "Literal", :binary => true
 """), 
 """
@@ -70,7 +70,7 @@ def revertToSourceCode():
 """
 keep_source_code_for_prebuilt_frameworks!
 
-pod "RxCocoa", :binary => true
+pod "RxCocoa", '~> 4.0', :binary => true
 pod "Literal"
 """), 
 """
@@ -91,7 +91,7 @@ enable_bitcode_for_prebuilt_frameworks!
 
 pod "Masonry", :binary => true
 pod "Literal", :binary => true
-pod "lottie-ios", :binary => true
+pod "lottie-ios", "~> 2.5", :binary => true
 """), 
 """
 import Masonry
@@ -110,7 +110,7 @@ def addSubPod():
 """
 pod "Masonry", :binary => true
 pod "Literal", :binary => true
-pod "lottie-ios", :binary => true
+pod "lottie-ios", "~> 2.5", :binary => true
 pod "AFNetworking/Reachability", :binary => true
 """) , 
 """
