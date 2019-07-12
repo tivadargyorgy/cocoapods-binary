@@ -99,7 +99,7 @@ import Literal
 import Lottie
 class A {
     let a: CGRect = [1,2,3,4]
-    let a2 = AnimationView.self
+    let a2 = LOTAnimationView.self
     let d = UIView().mas_top
 }
 """) 
@@ -120,7 +120,7 @@ import Lottie
 import AFNetworking
 class A {
     let a: CGRect = [1,2,3,4]
-    let a2 = AnimationView.self
+    let a2 = LOTAnimationView.self
     let b = AFNetworkReachabilityManager()
     let d = UIView().mas_top
 }
